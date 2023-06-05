@@ -1,2 +1,2 @@
 # JS-4-mDB-2
-JavaSkript ta memento DataBase 
+JavaSkript za memento DataBase 
