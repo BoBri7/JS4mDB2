@@ -1,17 +1,24 @@
-/*
-* funkcije za js.field
-* 
+/** funkcije za js.field
+* f(fn)  R: field(fn)
+* pr(fn) R: e.pev.f(fn)
+* m(d)   R: moment(d)
+* df(dv,df="DD.MM.YY HH:mm")
+* round(xv,n) R: round
 */
+
+// field(fn)
+function f(fn){ return field(x)}
+
 // vrne field(fn) prejšnjega zapisa
 // če 1.zapis vrne ""
 function pr(fn){ e=entry().prev()
  if(e==null) return ""
  return e.field(fn)
 }
-// field(fn)
-function f(fn){ return field(x)}
+
 // moment(x)
 function m(x){return moment(x)}
+
 // date format 
 function df(dv,df){if(f==null)df="DD.MM.YY HH:mm"
   return isNaN(moment(dv))
