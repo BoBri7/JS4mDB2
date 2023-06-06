@@ -5,9 +5,7 @@
 * df(dv,df="DD.MM.YY HH:mm")
 * round(xv,n) R: round
 */
-function jsff(){
-  return "java script field fx"
-}
+function jsff(){return "java script field fx"}
 // field(fn)
 function f(fn){ return field(fn)}
 
