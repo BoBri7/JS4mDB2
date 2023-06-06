@@ -5,7 +5,9 @@
 * df(dv,df="DD.MM.YY HH:mm")
 * round(xv,n) R: round
 */
-
+function jsff(){
+  return "java script field fx"
+}
 // field(fn)
 function f(fn){ return field(fn)}
 
@@ -20,10 +22,10 @@ function pr(fn){ e=entry().prev()
 function m(x){return moment(x)}
 
 // date format 
-function df(dv,df){if(df==null)df="DD.MM.YY HH:mm"
+function df(dv,df){//if(df==null)df="DD.MM.YY HH:mm"
   return isNaN(moment(dv))
    ? df //" d. m.yy. h:mm"
-   : moment(dv).format(df)
+   : moment(dv).format(df!=nul?df:"DD.MM.YY HH:mm")
 }
 function round(xv,n){ var nn=1+"0".repeat
   n=n>0
