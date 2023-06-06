@@ -20,7 +20,7 @@ function pr(fn){ e=entry().prev()
 function m(x){return moment(x)}
 
 // date format 
-function df(dv,df){if(f==null)df="DD.MM.YY HH:mm"
+function df(dv,df){if(df==null)df="DD.MM.YY HH:mm"
   return isNaN(moment(dv))
    ? df //" d. m.yy. h:mm"
    : moment(dv).format(df)
