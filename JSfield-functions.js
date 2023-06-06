@@ -27,9 +27,9 @@ function df(dv,df){//if(df==null)df="DD.MM.YY HH:mm"
    ? df //" d. m.yy. h:mm"
    : moment(dv).format(df!=null?df:"DD.MM.YY HH:mm")
 }
-function round(xv,n){ var nn=1+"0".repeat
+function round(xv,n){ n=n!=null ?n :1 //def=1
   n=n>0
     ? 1+"0".repeat(n)
-    : 1/(1+"0".repeat(-n))
+    : 1/(1+"0".repeat(-n)
   return Math.round(xv*n)/n
 }
