@@ -7,7 +7,7 @@
 */
 
 // field(fn)
-function f(fn){ return field(x)}
+function f(fn){ return field(fn)}
 
 // vrne field(fn) prejšnjega zapisa
 // če 1.zapis vrne ""
