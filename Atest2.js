@@ -1,5 +1,5 @@
 // begin
-function test(txt, hd){
+function test_(txt, hd){
   return "txt = "+txt+" hd="+hd
 }
 // end
