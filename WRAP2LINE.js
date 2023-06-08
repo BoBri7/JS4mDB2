@@ -21,7 +21,8 @@ function wt2l(txt, hd, ll, dl){ if(ll==null)ll=25
 }
 //== wrap list 2 lines
 function wl2l(lfn, hd, ll){ll=ll!=null ?ll :25
-  var o=((hd!=null ?hd :lfn+":")+" ".repeat(ll)).slice(0,ll)+":"
+  var o=((hd!=null ?hd :lfn+":")+" ".repeat(ll)).slice(0,ll)
+  o+=":"
   lfn=field(lfn)
   // lfn[1].checked = true
   for(let ii=0;ii<lfn.length;ii++){ti=lfn[ii]
