@@ -18,5 +18,5 @@ function barCh(i,n,N){
   s[0]="|"
   s[m]="|";
   s[m*2]="|"
-  return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")
+  return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")+"★"
 }  //=== end ===
