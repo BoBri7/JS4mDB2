@@ -6,7 +6,7 @@
 */
 function barCh(i,n,N,x){const d=["|.|:|","| |•|","|-:>|","[-:>]","01234"]
   if(i==null)return "barCh( i=index  n= N =#dekad del#[bmX])"                    
-  if(typeof(x)=="number"){  x=x[x] 
+  if(typeof(x)=="number"){  x=d[x] 
   } else if(typeof(x)!="string" ||  x.length!=5)x=d[0]
   if(x==null)x=d[4]
   var s=(x[1].repeat(n-1))
