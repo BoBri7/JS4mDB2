@@ -13,8 +13,9 @@ function barCh(i,n,N,x){const d=["|.|:|","| |•|","|-:>|","[-:>]","01234"]
   s=x[0]+(s+x[2]).repeat(N-1)+s+x[4]
   if(i==0) return s
   s=x[0]+x[3].repeat(i)+s.slice(i+1)
-  if(i>=n*N){s=s.split("");s[N*n]=x[4];
-  s=s.join("")}
-  return s
+  s=s.split("")                    
+  if(i>=n*N) s[N*n]=x[4];
+  if(i<0) s[0]="<"
+  return s.join("")}
 }
 //=== end ===
