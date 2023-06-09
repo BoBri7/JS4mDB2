@@ -1,11 +1,10 @@
-/**
-*
-*
-*
-*
-*
+/** barCh(i,n,N)
+* i =value
+* n = dekada
+* N = # dekad
 */
-function barCh(i,n,N,x){
+function barCh(i,n,N){
+  if(i==null)return "barCh(i,n,N) chart -m do +m"
   function a(x){return x<0 ?-x :x}
   if(i==null) return "barCh( i=index  n= N =#dekad del#[bmX])"
   const m=n*N
@@ -21,4 +20,3 @@ function barCh(i,n,N,x){
   s[m*2]="|"
   return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")+i
 }  //=== end ===
-//log(barCh(  12,10,2,0))
