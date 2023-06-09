@@ -3,7 +3,7 @@
 * n = dekada
 * N = # dekad
 */
-function barCh(i,n,N){
+function bar_Ch(i,n,N){
   if(i==null)return "barCh(i,n,N) chart -m do +m"
   function a(x){return x<0 ?-x :x}
   if(i==null) return "barCh( i=index  n= N =#dekad del#[bmX])"
@@ -18,5 +18,5 @@ function barCh(i,n,N){
   s[0]="|"
   s[m]="|";
   s[m*2]="|"
-  return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")+"★"
+  return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")+""
 }  //=== end ===
