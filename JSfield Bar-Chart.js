@@ -13,10 +13,10 @@ function barCh(i,n,N){
    if(i==0) return s
    s=s.split("");
   for(let ii=1;ii< a(i);ii++){
-     if(a(i)<m)   s[m+(i>0 ?ii :-ii)]= i>0 ?" " : " "
+     if(a(i)<m)   s[m+(i>0 ?ii :-ii)]= i>0 ?"•" : "•"
   }
   s[0]="|"
   s[m]="|";
   s[m*2]="|"
-  return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")+i
+  return (i<-m ?"-" :" ") +s.join("") + (i>m ?"+" :" ")
 }  //=== end ===
