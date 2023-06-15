@@ -41,8 +41,9 @@ function S(x){return String(x)}
 function round(xv,n){ if(n==null) n =1
   var o=1+"0".repeat(Math.abs(n))
   if( n < 0)  return Math.round(xv/o)*o
-  else { xv = String(xv+".0").split(".")
-   return xv[0]+","+(xv[1]+"0".repeat(n)).slice(0,n)
+ // else { xv = String(xv+".0").split(".")
+  else { xv = String(Math.round(xv*o)/o+".0").split(".")    
+  return xv[0]+","+(xv[1]+"0".repeat(n)).slice(0,n)
 }}
 // pad Right Left
 function prl(s,n){ n=n!=null ?n :15*(typeof(v)!="string"?-1:1)
