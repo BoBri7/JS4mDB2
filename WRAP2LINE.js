@@ -4,6 +4,11 @@
 * wl2l(lfn, hd, ll)
 *   = prepiše ListField v vrstice 
 */
+function wrap2line(){
+ let o="> wt2l(txt$,hd$#,Llen#=25 , dl$=:"
+ o+= "\n> wl2l(lfn$, hd, ll#=25)"
+ return o
+}
 // wrap text 2 lines
 function wt2l(txt, hd, ll, dl){ if(ll==null)ll=25
   const d=" "
