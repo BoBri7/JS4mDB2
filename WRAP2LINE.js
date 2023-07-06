@@ -6,11 +6,10 @@
 * wl2l(lfn, hd, ll)
 *   = prepiše ListField v vrstice 
 */
-function h() { return
-" >wT2l(txt, hed, ll=25, Dl=":" = multiLine Text >> lines
- >wt2l(txt, hed, ll=25, Dl=":") = prepiše text v vrstice dolžine ll
- >wl2l(lfn, hd, ll)             = prepiše ListField v vrstice 
-"
+function hlp() { return
+" >wT2l(txt, hed, ll=25, Dl=":" = multiLine Text >> lines \n"+
+" >wt2l(txt, hed, ll=25, Dl=":") = prepiše text v vrstice dolžine ll \n"+
+" >wl2l(lfn, hd, ll)             = prepiše ListField v vrstice "
 }
 
 // wrap MultiLineText
