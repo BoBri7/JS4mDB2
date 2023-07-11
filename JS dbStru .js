@@ -13,7 +13,7 @@ function dbStru(dbNam){
     :  libByName( dbNam )
   let dbf=db.fields()
   let dbe=db=lib().entries()[0]
-  let o= db.name
+  let o= "dbStru: "+lib().title
   for( let ii=0; ii< dbf.length; ii++){fi=dbf[ii]
     o+= "\n"                                   
     o+= s(fi)
