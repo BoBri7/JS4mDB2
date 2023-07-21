@@ -1,15 +1,16 @@
-function L(t,n){if(n==null)n=44
+function L(txt,n,T){if(n==null)n=44
 /** leva poravnqva za .st
 * L(txt , n=44) 
 *  text lines
 *  dolžina preloma
+*   lineTerminator
 */
- t=t.split("\n")
- for(let i=0;i<t.length;i++){
-   ti=t[i]
-   t[i] = ( ti+" ".repeat(n)).slice(0,n)
-   +(ti.length>n ? "\n"+ti.slice(n) :  "|")
+txt=txt.split("\n")
+ for(let i=0;i<txt.length;i++){
+   ti=txt[i]
+   txt[i] = ( ti+" ".repeat(n)).slice(0,n)
+   +(ti.length>n ? "\n >>"+ti.slice(n) : T==null ?"" :T )
  }
- return t.join("\n")
+ return txt.join("\n")
 }
 //=== end ===
