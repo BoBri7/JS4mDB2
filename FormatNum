@@ -1,0 +1,23 @@
+// from gugle.memento.grup https://groups.google.com/g/mementodatabase/c/PduT3secr_Q
+
+function formNumD(x,d){
+  var part = x.toString().split(",");
+  part[0] = part[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  part[1] = (part[1]+"0".repeat(d)).slice(0,d)
+  return part.join(",");
+}
+/**
+var number = field("Number Without Commas");
+var formatedNumber;
+formatedNumber = numberWithCommas(number);
+formatedNumber = "$" + formatedNumber;
+result = formatedNumber;
+//----------
+function numberWithCommas(x) {
+var parts = x.toString().split(".");
+parts[0] = parts[0].replace (
+/\B(?=(\d{3})+(?!\d))/g, ","
+);
+return parts.join(".");
+}
+*/
