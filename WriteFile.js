@@ -11,6 +11,10 @@
 */
 
 function WFn(txt,fn,fx,hed) {
+ function exist(o){ 
+  try { let t=o.readChar() ;  return true }
+  catch (Er) {return false }
+ }
 
  //message("FW12")  //★test
   
@@ -30,7 +34,7 @@ function WFn(txt,fn,fx,hed) {
  do{  
   var fn=ff+(i++)+fx
   var o=file(fn)
- } while( o.exists )
+ } while( exist(o) ) //o.exists )
  var er=""
 //return "hed="+ hed+"; er#"+er+"<\n fnam="+fn
 
