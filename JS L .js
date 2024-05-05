@@ -1,6 +1,6 @@
 function L(txt,n,T){if(n==null)n=44
 /** leva poravnqva za .st
-* L(txt , n=44) 
+* L(txt , n=44 , T="" ) 
 *  text lines
 *  dolžina preloma
 *   lineTerminator
